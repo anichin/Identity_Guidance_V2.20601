@@ -2,3 +2,8 @@
 bin
 obj
 *.user
+/1-SingleSignOn/Code/Adatum.Portal/obj
+/1-SingleSignOn/Code/Adatum.SimulatedIssuer.1/obj
+/1-SingleSignOn/Code/a-Expense.ClaimsAware/obj
+/1-SingleSignOn/Code/a-Expense.NoClaims/obj
+/1-SingleSignOn/Code/a-Order.ClaimsAware/obj
