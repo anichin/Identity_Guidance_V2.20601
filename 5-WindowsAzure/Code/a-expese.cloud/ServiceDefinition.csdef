@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ServiceDefinition name="a_expese.cloud" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition">
+<ServiceDefinition name="a_expese.cloud" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2015-04.2.6">
   <WebRole name="a-Expense.ClaimsAware.5">
     <Sites>
       <Site name="Web">
@@ -12,10 +12,12 @@
       <InputEndpoint name="HttpsIn" protocol="https" port="443" certificate="localhost" />
     </Endpoints>
     <Imports>
-      <Import moduleName="Diagnostics" />
     </Imports>
     <Certificates>
       <Certificate name="localhost" storeLocation="LocalMachine" storeName="My" />
     </Certificates>
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" />
+    </ConfigurationSettings>
   </WebRole>
 </ServiceDefinition>

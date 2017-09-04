@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Supporting files", "Supporting files", "{F97E9815-B0F3-414A-B463-1345B6FECE27}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "f-Shipping", "3-FederationWithMultiplePartners\Code\f-Shipping\f-Shipping.csproj", "{54248F34-0617-4DB2-AA4D-AA1CE3C4407C}"
@@ -65,5 +67,8 @@ Global
 		{3C9C7EE0-3FE1-4F7C-AD8C-F1044B16A8DB} = {F97E9815-B0F3-414A-B463-1345B6FECE27}
 		{67F3EDE9-101B-44E6-879B-9C190FAB3C21} = {F97E9815-B0F3-414A-B463-1345B6FECE27}
 		{0CD4993E-1276-40EE-8908-2C30CFC1D960} = {F97E9815-B0F3-414A-B463-1345B6FECE27}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D0C97C2E-4644-4A66-BF7D-E5F800DA25E5}
 	EndGlobalSection
 EndGlobal

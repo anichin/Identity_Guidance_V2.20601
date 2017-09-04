@@ -1,5 +1,5 @@
-<?xml version="1.0"?>
-<ServiceConfiguration serviceName="a_expese.cloud" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="a_expese.cloud" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" schemaVersion="2015-04.2.6">
   <Role name="a-Expense.ClaimsAware.5">
     <Instances count="1" />
     <ConfigurationSettings>

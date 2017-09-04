@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Supporting files", "Supporting files", "{A9004229-B217-4738-8D08-0B3D002724BF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "a-Order.OrderTracking.PhoneClient", "9-WindowsPhoneClientFederation\Code\a-Order.OrderTracking.PhoneClient\a-Order.OrderTracking.PhoneClient.csproj", "{0E398D19-16D1-4D28-9530-3F68A143C48A}"
@@ -147,5 +149,8 @@ Global
 		{3C9C7EE0-3FE1-4F7C-AD8C-F1044B16A8DB} = {A9004229-B217-4738-8D08-0B3D002724BF}
 		{67F3EDE9-101B-44E6-879B-9C190FAB3C21} = {A9004229-B217-4738-8D08-0B3D002724BF}
 		{309877C5-0AAA-4BED-BBA7-F67795B17D0F} = {A9004229-B217-4738-8D08-0B3D002724BF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {96DE04B5-4E3A-4E20-8917-78E7746AF1EF}
 	EndGlobalSection
 EndGlobal

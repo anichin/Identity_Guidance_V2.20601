@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Supporting files", "Supporting files", "{6C0D2C47-E324-48EF-B4E5-7E1E03597C97}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Litware.Portal.6", "6-FederationAndAcs\Code\Litware.Portal.6\Litware.Portal.6.csproj", "{1FF912E6-BBE3-464F-BC1F-93731CD42389}"
@@ -129,5 +131,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{3C9C7EE0-3FE1-4F7C-AD8C-F1044B16A8DB} = {6C0D2C47-E324-48EF-B4E5-7E1E03597C97}
 		{67F3EDE9-101B-44E6-879B-9C190FAB3C21} = {6C0D2C47-E324-48EF-B4E5-7E1E03597C97}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D7AA0474-7272-4C44-A1CC-75FDE9E99DAE}
 	EndGlobalSection
 EndGlobal
