@@ -73,6 +73,21 @@ namespace Adatum.SimulatedIssuer
                                                            new Claim(AllOrganizations.ClaimTypes.Group, Adatum.Groups.CustomerService)
                                                        });
                     break;
+                case "ADATUM\\ANGEL":
+                    outputIdentity.Claims.AddRange(new List<Claim>
+                                                       {
+                                                           new Claim(ClaimTypes.Name, "angel"),
+                                                           new Claim(ClaimTypes.GivenName, "Angel"),
+                                                           new Claim(ClaimTypes.Surname, ""),
+                                                           new Claim(ClaimTypes.StreetAddress, "108 Main St."),
+                                                           new Claim(ClaimTypes.StateOrProvince, "CO"),
+                                                           new Claim(ClaimTypes.Country, "United States"),
+                                                           new Claim(Adatum.ClaimTypes.CostCenter, Adatum.CostCenters.Accountancy),
+                                                           new Claim(Microsoft.IdentityModel.Claims.ClaimTypes.Role, Adatum.Roles.Accountant),
+                                                           new Claim(Microsoft.IdentityModel.Claims.ClaimTypes.Role, Adatum.Roles.OrderApprover),
+                                                           new Claim(AllOrganizations.ClaimTypes.Group, Adatum.Groups.CustomerService)
+                                                       });
+                    break;
                 case "ADATUM\\PETER":
                     outputIdentity.Claims.AddRange(new List<Claim>
                                                        {

@@ -24,6 +24,7 @@
             <asp:RadioButtonList ID="UserList" runat="server">
                 <asp:ListItem Text="ADATUM\johndoe (Group: 'Customer Service'; Role:'Order Tracker')" Value="ADATUM\johndoe" Selected="True" />
                 <asp:ListItem Text="ADATUM\mary (Group: 'Customer Service'; Roles:'Order Tracker' & 'Order Approver')" Value="ADATUM\mary" />
+                <asp:ListItem Text="ADATUM\angel (Group: 'Customer Service'; Roles:'Accountant' & 'Order Approver')" Value="ADATUM\angel" />
                 <asp:ListItem Text="ADATUM\peter (Groups: 'Order Fulfillments' & 'IT Admins'; Role:'Order Tracker')" Value="ADATUM\peter" />
             </asp:RadioButtonList>
         </div>
