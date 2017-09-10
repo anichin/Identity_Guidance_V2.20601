@@ -25,8 +25,8 @@ namespace AExpense.Data
         private static Role employeeRole;
 
         private static User johnDoe;
-
         private static User maryMay;
+        private static User angel;
 
         public static Role AccountantRole
         {
@@ -46,6 +46,11 @@ namespace AExpense.Data
         public static User MaryMay
         {
             get { return maryMay; }
+        }
+
+        public static User Angel
+        {
+            get { return angel; }
         }
 
         public User GetUser(string userName)
@@ -93,36 +98,46 @@ namespace AExpense.Data
         private static ICollection<User> InitializeUserStoreAndAddData()
         {
             johnDoe = new User
-                          {
-                              Id = new Guid("{3824B8C2-B263-4fb9-A6AE-9284012C1004}"), 
-                              UserName = "johndoe", 
-                              FullName = "John Doe", 
-                              CostCenter = Adatum.CostCenters.CustomerService, 
-                              PreferredReimbursementMethod = ReimbursementMethod.Check, 
-                              PasswordHashAndSalt = "79373A35560863479ADBFC5725F9D52EA7CC88A5NOtw="
-                          };
+            {
+                Id = new Guid("{3824B8C2-B263-4fb9-A6AE-9284012C1004}"),
+                UserName = "johndoe",
+                FullName = "John Doe",
+                CostCenter = Adatum.CostCenters.CustomerService,
+                PreferredReimbursementMethod = ReimbursementMethod.Check,
+                PasswordHashAndSalt = "79373A35560863479ADBFC5725F9D52EA7CC88A5NOtw="
+            };
 
             maryMay = new User
-                          {
-                              Id = new Guid("{9B9175AE-1A39-43ce-8D63-B9B1BDC8E2FE}"), 
-                              UserName = "mary", 
-                              FullName = "Mary May", 
-                              CostCenter = Adatum.CostCenters.Accountancy, 
-                              PreferredReimbursementMethod = ReimbursementMethod.Cash, 
-                              PasswordHashAndSalt = "1A6997BA0F23035644E9B37E92F925034D75E2E9hL3w="
-                          };
+            {
+                Id = new Guid("{9B9175AE-1A39-43ce-8D63-B9B1BDC8E2FE}"),
+                UserName = "mary",
+                FullName = "Mary May",
+                CostCenter = Adatum.CostCenters.Accountancy,
+                PreferredReimbursementMethod = ReimbursementMethod.Cash,
+                PasswordHashAndSalt = "1A6997BA0F23035644E9B37E92F925034D75E2E9hL3w="
+            };
+
+            angel = new User
+            {
+                Id = new Guid("{A109EB50-F9A8-42B4-8665-09DAFDFF06A4}"),
+                UserName = "angel",
+                FullName = "Angel",
+                CostCenter = Adatum.CostCenters.Accountancy,
+                PreferredReimbursementMethod = ReimbursementMethod.DirectDeposit,
+                PasswordHashAndSalt = "A59EFEB98E6AB16B8A38ABA2D0BE7FFD222DBC8BhL3w="
+            };
 
             employeeRole = new Role
-                               {
-                                   Id = new Guid("{9A7254DD-864A-4784-9F80-A9D5EB647741}"), 
-                                   Name = Adatum.Roles.Employee
-                               };
+            {
+                Id = new Guid("{9A7254DD-864A-4784-9F80-A9D5EB647741}"),
+                Name = Adatum.Roles.Employee
+            };
 
             accountantRole = new Role
-                                 {
-                                     Id = new Guid("{49A1E6FC-A7C2-434e-BE1E-00AFD3F25A7C}"), 
-                                     Name = Adatum.Roles.Accountant
-                                 };
+            {
+                Id = new Guid("{49A1E6FC-A7C2-434e-BE1E-00AFD3F25A7C}"),
+                Name = Adatum.Roles.Accountant
+            };
 
             var userStoreList = new List<User>();
             JohnDoe.Roles.Add(EmployeeRole);
@@ -131,6 +146,10 @@ namespace AExpense.Data
             MaryMay.Roles.Add(EmployeeRole);
             MaryMay.Roles.Add(AccountantRole);
             userStoreList.Add(MaryMay);
+
+            Angel.Roles.Add(EmployeeRole);
+            Angel.Roles.Add(AccountantRole);
+            userStoreList.Add(Angel);
 
             return userStoreList;
         }
