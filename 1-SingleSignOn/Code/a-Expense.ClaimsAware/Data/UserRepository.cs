@@ -30,6 +30,8 @@ namespace AExpense.Data
 
         private static User maryMay;
 
+        private static User angel;
+
         public static Role EmployeeRole
         {
             get
@@ -59,6 +61,14 @@ namespace AExpense.Data
             get
             {
                 return maryMay;
+            }
+        }
+
+        public static User Angel
+        {
+            get
+            {
+                return angel;
             }
         }
 
@@ -97,6 +107,14 @@ namespace AExpense.Data
                 PreferredReimbursementMethod = ReimbursementMethod.Cash
             };
 
+            angel = new User
+            {
+                Id = new Guid("{A109EB50-F9A8-42B4-8665-09DAFDFF06A4}"),
+                UserName = "angel",
+                FederatedUserName = @"adatum\angel",
+                PreferredReimbursementMethod = ReimbursementMethod.DirectDeposit
+            };
+
             var peter = new User
             {
                 Id = new Guid("{372A59F1-1FC2-4404-882C-3B8EF2B14C27}"),
@@ -124,6 +142,10 @@ namespace AExpense.Data
             MaryMay.Roles.Add(EmployeeRole);
             MaryMay.Roles.Add(AccountantRole);
             userStoreList.Add(MaryMay);
+
+            Angel.Roles.Add(EmployeeRole);
+            Angel.Roles.Add(AccountantRole);
+            userStoreList.Add(Angel);
 
             peter.Roles.Add(EmployeeRole);
             userStoreList.Add(peter);
