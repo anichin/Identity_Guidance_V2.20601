@@ -86,6 +86,35 @@ namespace AExpense.Data
                         ReimbursementMethod = ReimbursementMethod.Check
                     });
 
+            expensesStoreList.Add(
+                new Expense
+                {
+                    Id = new Guid("D8DBF994-1654-43DE-8C3D-7C2A062F6AE2"),
+                    User = UserRepository.Angel,
+                    Title = "Hotel",
+                    Description = "1 night at Hyatt Regency, Phoenix, AZ",
+                    Amount = 168.0m,
+                    Date = new DateTime(2017, 08, 21),
+                    Approved = true,
+                    CostCenter = Adatum.CostCenters.Accountancy,
+                    ReimbursementMethod = ReimbursementMethod.DirectDeposit
+                });
+
+            expensesStoreList.Add(
+                new Expense
+                {
+                    Id = new Guid("D56B7AF3-85FE-4397-95C6-B448624C7368"),
+                    User = UserRepository.Angel,
+                    Title = "Meals",
+                    Description = "lunch at Chili's, Phoenix, AZ",
+                    Amount = 17.50m,
+                    Date = new DateTime(2017, 08, 22),
+                    Approved = true,
+                    CostCenter = Adatum.CostCenters.Accountancy,
+                    ReimbursementMethod = ReimbursementMethod.DirectDeposit
+                });
+
+
             return expensesStoreList;
         }
     }
