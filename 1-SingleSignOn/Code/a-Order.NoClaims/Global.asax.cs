@@ -27,6 +27,16 @@ namespace AOrder
             }
         }
 
+        private static IPrincipal Angel
+        {
+            get
+            {
+                IIdentity identity = new GenericIdentity("angel");
+                string[] roles = { Adatum.Roles.Employee, Adatum.Roles.OrderApprover, Adatum.Roles.Accountant };
+                return new GenericPrincipal(identity, roles);
+            }
+        }
+
         // In a production scenario, the user would be authenticated using Windows 
         // Integrated Authentication. This is becasue we don't want to force you to 
         // create new users on your local users and groups to experiment different logins.
@@ -37,7 +47,9 @@ namespace AOrder
             // * 'Employee' role
             // - MaryMay
             // * 'Employee' and 'Order approver' roles
-            this.Context.User = MaryMay;
+            //this.Context.User = MaryMay;
+
+            this.Context.User = Angel;
         }
     }
 }
