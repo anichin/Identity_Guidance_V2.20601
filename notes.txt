@@ -1,0 +1,23 @@
+username: angel
+password: a........1
+
+If you add new expenses they are not persisted. The application does not use a database.
+If you want to add some expenses associated with the new user you have to add this to ExpenseRepository.cs
+
+If you get an exception like this:
+
+System.Security.Cryptography.CryptographicException occurred
+  HResult=0x80090016
+  Message=Keyset does not exist
+  
+You need to relax the access to the certificates.
+
+I gave full access to "Everyone" for these certificates under Personal\Certificates
+
+adatum
+fabrikam
+litware
+localhost  (issued by Root Agency)
+
+
+https://social.technet.microsoft.com/Forums/windowsserver/en-US/743d793c-ca94-45b3-88c6-375097eaafc0/rights-to-see-the-local-computer-certificates-store?forum=winserversecurity

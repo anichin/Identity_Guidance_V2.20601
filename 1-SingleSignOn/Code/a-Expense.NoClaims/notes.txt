@@ -1,5 +1,0 @@
-username: angel
-password: a........1
-
-If you add new expenses they are not persisted. The application does not use a database.
-If you want to add some expenses associated with the new user you have to add this to ExpenseRepository.cs
